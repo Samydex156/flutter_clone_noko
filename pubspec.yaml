@@ -1,0 +1,27 @@
+name: flutter_impresora
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.10.3
+
+dependencies:
+  file_picker: ^10.3.8
+  flutter:
+    sdk: flutter
+  lan_scanner: ^4.0.0+1
+  multicast_dns: ^0.3.3
+  network_info_plus: ^7.0.0
+  path_provider: ^2.1.5
+  pdf: ^3.11.3
+  permission_handler: ^12.0.1
+  printing: ^5.14.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
