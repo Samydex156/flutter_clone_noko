@@ -254,10 +254,28 @@ class _SimplePrintAppState extends State<SimplePrintApp> {
     return Scaffold(
       backgroundColor: const Color(0xFFF5F5F5),
       appBar: AppBar(
-        title: const Text("IMPRESORA OPTALVIS"),
+        title: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            ClipRRect(
+              borderRadius: BorderRadius.circular(8),
+              child: Image.asset(
+                'assets/OptalvitoSistemav2.jpg',
+                height: 35,
+                fit: BoxFit.cover,
+              ),
+            ),
+            const SizedBox(width: 12),
+            const Text(
+              "IMPRESORA OPTALVIS",
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+            ),
+          ],
+        ),
         centerTitle: true,
         backgroundColor: const Color(0xFF1976D2),
         foregroundColor: Colors.white,
+        elevation: 2,
       ),
       body: Column(
         children: [
@@ -519,4 +537,12 @@ class _BigButton extends StatelessWidget {
       ),
     );
   }
+}
+
+class Printer {
+  final String name;
+  final String url;
+  final bool isAvailable;
+
+  Printer({required this.name, required this.url, required this.isAvailable});
 }
