@@ -19,6 +19,7 @@ dependencies:
   permission_handler: ^12.0.1
   printing: ^5.14.2
   shared_preferences: ^2.5.4
+  audioplayers: ^5.2.1
 
 dev_dependencies:
   flutter_test:
@@ -31,6 +32,7 @@ flutter:
   assets:
     - assets/OptalvitoSistemav2.jpg
     - assets/IconoImpreSam02.png
+    - assets/success.mp3
 
 flutter_launcher_icons:
   android: "launcher_icon"
